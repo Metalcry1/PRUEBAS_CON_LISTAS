@@ -8,18 +8,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val daysOfWeek  = mutableListOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes","Sabado", "Domingo")
-
-        val daysOfWeek2 : MutableList<String> = mutableListOf()
-
-     listillas(daysOfWeek  = mutableListOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes","Sabado", "Domingo"))
-    // convertToSet(daysOfWeek2 = mutableListOf())
+    listillas()
 
     }
 
-    fun listillas (daysOfWeek: List<String>){
+    fun listillas (){
 
 
+        val daysOfWeek  = mutableListOf("Lunes", "Martes", "Miercoles", "Jueves", "Viernes","Sabado", "Domingo")
 
         daysOfWeek.add(0,"Daniel")
 
@@ -36,11 +32,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         println(daysOfWeek.filter {it.contains('a')})
-    }
-/*
-    fun convertToSet(daysOfWeek2: List<String>){
 
-
+        val daysOfWeek2 : MutableList<String> = mutableListOf()
 
         for (elements in daysOfWeek.indices) {
 
@@ -48,11 +41,16 @@ class MainActivity : AppCompatActivity() {
 
         }
         println("Elementos en daysOfWeek2: ${daysOfWeek2.toString()}")
+    }
+
+    fun convertToSet(){
+
+
 
 
     }
 
-*/
+
 
 }
 
