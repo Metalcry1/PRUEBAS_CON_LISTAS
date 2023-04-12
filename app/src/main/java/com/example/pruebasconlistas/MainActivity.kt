@@ -25,7 +25,20 @@ class MainActivity : AppCompatActivity() {
         daysOfWeek.forEach { println(it) }
         println(daysOfWeek.toString())
 
+        if (daysOfWeek.isEmpty()){
+
+            println("Esta vacio")
+
+
+        }else{
+            println("contiene: ${daysOfWeek.toString()}")
+        }
+
+        println(daysOfWeek.filter {it.contains('a')})
+
     }
 
 
 }
+
+
